@@ -1,0 +1,2 @@
+Olá! Esse é meu primeiro projeto web, a proposta do projeto é um formulário que recebe dados do usuário e armazena em um arquivo CSV.
+Utilizei Python com Flask, HTML, CSS e um arquivo CSV para armazenar os cadastros.

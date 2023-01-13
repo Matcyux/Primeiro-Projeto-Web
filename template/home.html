@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+<!-- inicio do código css, efeito do fundo de tela -->
+
+    <style>
+       * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 110%;
+        }
+        .gradient{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(45deg, rgb(255, 255, 255), rgb(201, 200, 200), rgb(133, 133, 133), rgb(75, 75, 75));
+        background-size: 300%, 300%;
+        animation: colors 15s ease infinite;
+        }
+        main {
+            border-radius: 10px;
+            box-shadow: 5xp 5xp 15xp rgba(136, 109, 93, 0.616);
+            width: 600px;
+            padding: 100px;
+            margin: auto;
+            
+            
+        }
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 300%;
+        }
+        h2 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 150%;
+        }
+
+        h3 {
+            color: rgb(0, 0, 0);
+            text-align: justify;
+            font-size: 100%;
+        }
+
+        h4 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 50%;
+
+        }
+        @keyframes colors {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 50% 100%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+    </style>
+</head>
+<!-- termina o código do efeito do fundo de tela -->
+
+<!-- inicio do código de texto da página -->
+<body class = "gradient">
+    <body bgcolor="#F0F8FF">
+<main>
+    <h1>Pynet</h1>
+    <h2>Olá, bem vindo(a) ao nosso site!</h2>
+    <h3>Fundada em março de 2022 por Matheus Cavalheiro, Luis Guilherme, Gabriel Rosa, Otávio Beloto e Pedro Gracia. Pynet é uma empresa de desenvolvimento de softwares back-end e front-end, com conhecimento em mapeamento de processos, linguagens de programação Python com Flask, Pascal, C, HTML, CSS, sistemas operacionais Windows e Linux e também fazemos manutenções de computadores.</h3>
+    <br>
+    <h3>E-mail para contato: Pynet@gmail.com</h3>
+    <h3>Telefone para contato: (41) 96969-6969</h3>
+    <p>
+    <h3>Faça o cadastro e entre para nosso time!
+    <br>
+    <br>
+    <br>
+    <div>
+        <h4>
+            <a href="http://127.0.0.1:5000/formulario" <button style="background: linear-gradient(45deg, rgb(255, 255, 255), rgb(201, 200, 200), rgb(133, 133, 133), rgb(75, 75, 75));background-size: 300%, 300%;
+                animation: colors 15s ease infinite; border-radius: 5px; padding: 20px; cursor: pointer; color: #000000; border: none; font-size: 20px;">Cadastrar-se</button></a>
+        </h4>
+    </div>
+</main>
+</body>
+<!-- termina o código de texto da página -->
+</html>

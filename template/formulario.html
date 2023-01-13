@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="home.html">
+
+<!-- inicio do código css, efeito do fundo de tela -->
+    <style>
+        * {
+            font-family: sans-serif;
+            font-size: 100%;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 250%;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        body {
+            box-shadow: 5xp 5xp 15xp black;
+            background: linear-gradient(45deg, rgb(255, 255, 255), rgb(201, 200, 200), rgb(133, 133, 133), rgb(75, 75, 75));
+            background-size: 550%, 550%;
+            animation: colors 15s ease infinite;
+        } 
+        div {
+            border-radius: 10px;
+            box-shadow: 5xp 5xp 15xp black;
+            width: 270px;
+            padding: 30px;
+            text-align: left;
+            background-size: 300%, 300%;
+            animation: colors 15s ease infinite;
+            
+        }
+
+        main {
+            border-radius: 10px;
+            box-shadow: 5xp 5xp 15xp black;
+            width: 700px;
+            padding: 65px;
+            margin: auto;
+            text-shadow: 1px 1px 1px black;
+
+        }
+
+        input {
+            background-color: rgb(255, 255, 255);
+            width: 140px;
+            padding: 6px;
+            text-align: left;
+            border-radius: 10px;
+
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .bloco-1{
+            color: rgb(0, 0, 0);
+            
+
+        }
+
+        .bloco-2, .bloco-3, .bloco-4, .bloco-5, .bloco-6, .bloco-7, .bloco-8 {
+            order: 0;
+            color: rgb(0, 0, 0);
+            
+        }
+
+        .bloco-9, .bloco-10{
+            order: 0;
+            width: 150px;
+            padding: 30px;
+            text-align: center;
+            
+        }
+
+        @keyframes colors {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 50% 100%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        
+
+</style>
+</head>
+<!-- termina o código do efeito do fundo de tela -->
+
+<!-- inicio do código do formulário -->
+<body>
+    <body bgcolor="silver">
+<h1 style="text-align: center;"> Cadastro</h1>
+
+{% block formulario %}
+
+    <form style="text-align: left;" action="{{url_for('formulario')}}", method="POST">
+
+        <main class = "container">
+
+            <div class="bloco-1">
+                <label>NOME COMPLETO</label><br>
+                <input type="text" name="Nome completo" required placeholder="Digite seu nome completo" style="width: 250px;"><br>
+                <br> 
+            </div>
+
+            <div class="bloco-2">
+                <label>CPF</label><br>
+                <input type="text" name="CPF" required placeholder="Digite seu CPF" style="width: 250px;"><br>
+                <br>
+            </div>
+
+            <div class="bloco-3">
+                <label>DATA DE NASCIMENTO</label><br>
+                <input type="text" name="Data de Nascimento" required placeholder="dd/mm/aaaa" style="width: 250px;"><br>
+                <br>
+            </div>
+
+            <div class="bloco-4">
+                <label>TELEFONE</label><br>
+                <input type="text" name="Telefone de contato" required placeholder="(DDD) 9 9999-9999" style="width: 250px;"><br>
+                <br>
+            </div>
+
+            <div class="bloco-5">
+                <label>EMAIL</label><br>
+                <input type="text" name="Email" required placeholder="Digite seu email" style="width: 250px;"><br>
+                <br>
+            </div>
+
+            <div class="bloco-6">
+                <label>CIDADE</label><br>
+                <input type="text" name="Cidade" required placeholder="Digite sua cidade" style="width: 250px;"><br>
+                <br>
+            </div>
+
+            <div class="bloco-7">
+                <label>UF</label><br>
+                <input type="text" name="UF" required placeholder="Digite sua UF" style="width: 98px;"><br>
+                <br>
+            </div>
+
+            <div></div>
+
+            <div class="bloco-9">
+                <input type="submit" value="Enviar Cadastro">
+            </div>
+
+            <div class="bloco-10">
+                <input type="reset" value="Limpar Campos">
+            </div>
+        
+        </main>
+    </form> 
+{% endblock formulario %}
+
+</body>
+<!-- final do código do formulário -->
+</html>
